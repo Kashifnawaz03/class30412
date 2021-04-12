@@ -29,16 +29,18 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
          node-version: 12
-         
-        
-      - name: Checkout
-        uses: actions/checkout@master
-      - name: setup node ${{matrix.node-version}}
-        uses: actions/setup-node@v1.4.1
+    
+      - uses: borales/actions-yarn@v2.0.0
         with:
-          node-version: ${{matrix.node-version}}
-      - name: install packages
-        run: yarn install
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test # will run `yarn test` command
+        
+     
       
           
       - name: Install Surge
