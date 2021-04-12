@@ -1,8 +1,13 @@
 import React from 'react';
+import Dinner from './dinner.js';
 
 
 function App() {
-  return <h1>Hello world from Kashif</h1>
+  return <div>
+    
+      <Dinner />
+  </div>
+
 
 }
 
