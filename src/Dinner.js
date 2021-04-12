@@ -1,4 +1,5 @@
 import React from 'react';
+import Dinner from './dinner.css';
 
 function Dinner (props){
     return <div><h1>I am working {props.myName}</h1>
