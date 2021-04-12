@@ -37,7 +37,7 @@ jobs:
          
       - name: Build React App
         with: 
-         cmd: build
+         run: build
    
           
       - name: Install Surge
