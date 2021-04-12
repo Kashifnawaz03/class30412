@@ -1,12 +1,24 @@
 import React from 'react';
-import Dinner from './dinner.js';
+import Dinner from './Dinner.js';
+
+
 
 
 function App() {
   return <div>
+   <Dinner myName = "Kashif" feeling = "Happy" why = "Succefful"/>
+   <hr/>
+   
+          <Dinner myName = "Nawaz" feeling = "excited" why = "Great"/>
+          
+
     
-      <Dinner />
-  </div>
+          </div>
+
+  
+    
+    
+  
 
 
 }
