@@ -39,10 +39,7 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: install packages
         run: yarn install
-      - name: check linting
-        run: yarn lint
-      - name: test
-        run: yarn test
+      
           
       - name: Install Surge
         run: npm install -g surge
