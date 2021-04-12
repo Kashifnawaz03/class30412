@@ -33,14 +33,13 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-    
-      - run: yarn build
-        
      
-      
-             
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build # will run `yarn build` command
+          
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        
+   
         run: surge ./build class30412.surge.sh --token ${{secrets.SURGE_TOKEN}}
