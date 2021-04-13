@@ -1,12 +1,13 @@
 import React from 'react';
-import Dinner from './Dinner.js';
+//import Dinner from './Dinner.js';
 
 
 
 
 
 function App() {
-  return <div>
+  return <div>Is this workng now?</div>
+  /*<div>
    <Dinner myName = "(Kashif)" feeling = "(Happy)" why = "(Succefful)"/>
    <hr/>
    
@@ -14,7 +15,7 @@ function App() {
           
 
     
-          </div>
+          </div>*/
 
   
     
